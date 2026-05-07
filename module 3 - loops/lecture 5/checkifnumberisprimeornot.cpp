@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter the number : ";
+    cin>>n;
+    if(n==1){
+        cout<<"The number is neither prime nor composite number";
+    }
+    if(n==2){
+        cout<<"The number is prime number";
+    }
+    for(int i=2;i<=n-1;i++){
+        if(n%i==0){
+            cout<<"The number is not prime";
+       break;
+        }
+        
+        else{
+            cout<<"The number is prime number";
+            break;
+        }
+        
+    }
+    return 0;
+}
